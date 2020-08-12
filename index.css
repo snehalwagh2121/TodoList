@@ -9,81 +9,92 @@ body{
                      rgba(20, 20, 20, 0.8)),
                      url( images/coffeeTable.jpg);
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 }
 .container{
-    /* background-color: violet; */
-    width: 50%;
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
+    transform: translate(25vw,10vh);
+    width: 70vw;
+    height: 100vh;
 }
 .search{
-    height: 10%;
-    width: 60%;
+    height: 7vh;
+    width: 50vw;
     margin: 2%;
-    display: flex;
+    display: flex; 
 }
 .searchBar{
     height: 100%;
-    width: 80%;
-    border-radius: 5%;
+    width: 75%;
     background-color: transparent;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;  
+    border: none;
+    border-bottom: 2px solid #818181;
 }
 .search-icon{
-    /* height: 100%; */
-    /* width: 10%; */
-    margin: 4%;
+    height: 100%;
+    margin: 2%;
     color: white;
 }
 .todos{
-    /* height: 60%; */
-    width: 50%;
-    /* background-color: yellow; */
+    width: 35vw;
+    /* background-color: blue; */
 }
 .todo{
     position: relative;
-    height: 10%;
-    padding: 3%;
-    margin: 3% 0;
-    background-color: rgb(231, 213, 180);
+    height: 7vh;
+    margin: 3% 7%;
+    background-color: #efdecd;
+    border: 3px solid #b38b6d;
     list-style: none;
     width: 100%;
-    margin-left: -15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    line-height: 7vh;
+    vertical-align: middle;
     font-family: 'Open Sans', sans-serif;
-    border-radius: 5%;
     font-size: large;
 }
 .delete{
     position: absolute;
     right: 5%;
+    top: 30%;
 }
 .addTodo{
-    height: 10%;
-    width: 60%;
-    margin: 2%;
+    position: relative;
+    height: 7vh;
+    width: 40vw;
+    margin: 2% 7%;
 }
 .add{
+    position: absolute;
     height: 100%;
     width: 80%;
-    border-radius: 5%;
     background-color: transparent;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+    border: 2px solid #818181;
+}
+.add:focus{
+    border: 2px solid #faf0f0;
 }
 .btn{
+    right: 0;
+    position: absolute;
     height: 100%;
-    width:19%;
+    width:15%;
     border-radius: 5%;
     background-color: transparent;
     color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: large;
+    border: 2px solid #818181;
 }
 .filtered{
     display: none;
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+    font-size: large;
 }
